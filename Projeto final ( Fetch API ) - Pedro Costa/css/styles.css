@@ -1,0 +1,332 @@
+/* books grid */
+
+.books-grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.books-grid li {
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.book {
+  width: 140px;
+  float: left;
+}
+
+.book-title,
+.book-authors {
+  font-size: 0.8em;
+  margin-left: 16px;
+}
+
+.book-title {
+  margin-top: 10px;
+  margin-left: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.book-authors {
+  color: #999;
+}
+
+.book-top {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.book-shelf-changer {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #60ac5d;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.book-shelf-changer:hover {
+  transform: scale(1.1);
+  transition: 150ms;
+}
+
+.book-shelf-changer select {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Estética das capas */
+
+.book-cover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: rgba(0, 0, 0, 1);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div {
+display: flex;
+flex-direction: column;
+}
+
+#books-grid-lendo, #books-grid-gostaria, #books-grid-lido, #books-grid-pesquisa {
+ display: grid;
+ grid-template-columns: repeat(5, 20%);
+ list-style-type: none;
+ padding-left: none;
+}
+
+li {
+  padding-top: 15px;
+  justify-self: center;
+}
+
+ol, ul {
+  padding-left: 0;
+}
+
+.papai:hover {
+  transform: scale(1.1);
+  transition: 350ms;
+}
+
+.book-cover-title {
+  padding: 20px 10px 0;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* AREA DA BARRA DE PESQUISA */
+
+#sombra {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(43, 4, 135);
+  height: 72px;
+  box-shadow: 0px 9px 6px 2px rgba(0,0,0,0.33);
+}
+
+.home {
+  display: flex;
+  height: 50px;
+  width: 246px;
+  justify-content: center;
+}
+
+.svg_home {
+  margin: 0 20 0 0;
+}
+
+.home button:active {
+   outline: none;
+}
+
+.home:hover {
+  transform: scale(1.010);
+  transition: 100ms;
+}
+
+.sombra .home {
+  align-self: center;
+  margin: 0 20 0 20 ;
+}
+
+.navegacao_header{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.navegacao_header a {
+  margin: 0px 20px 0 0;
+  padding: 22px 0px 0 0px;
+  text-align:center;
+  background-color: rgb(43, 4, 135);
+  width: 180px;
+}
+
+.navegacao_header a:hover {
+  border-bottom: 5px solid white;
+}
+
+.navegacao_header a svg {
+  width: 30px;
+  height: 30px;
+  margin: 0 10 0 0;
+}
+
+.navegacao_header a:hover {
+  font-size: 1.03rem;
+  transition: 250ms;
+  color: white;
+}
+
+.link_decoration_off {
+  text-decoration: none;
+  color: white;
+}
+
+.caixa_pesquisa {
+  display: flex;
+  flex-direction: row;
+  margin: 20 0 0 0;
+  height: 35px;
+  width: 100vh;
+}
+
+.caixa_pesquisa input {
+  width: 70%;
+}
+
+.caixa_pesquisa button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bi-house-fill {
+  position: relative;
+  width: 45px;
+  height: 45px;
+}
+
+.logo_header {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin: 1.5vh 0 0 1vh;
+  width: 500px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.titulo_pagina {
+  font-family: 'Dancing Script', cursive;
+  color: rgb(255, 255, 255);
+  width: 40vh;
+  overflow: hidden;
+  transform: none;
+  animation: none;
+  overflow: visible;
+}
+
+.logo_header:hover {
+  color: white;
+}
+
+.hide {
+  position: absolute;
+  opacity: 0%;
+}
+
+.search-books-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-left: 128px;
+  padding-top: 48px;
+}
+
+.search-books-input-wrapper input {
+  width: 400px;
+  height: 30px;
+}
+
+.search-books-input-wrapper button {
+  height: 30px;
+  width: 76px;
+}
+
+#actived {
+  border-bottom: 5px solid white;
+  background-color: rgb(41, 5, 126);
+}
+
+/* INCIO DAS BOOKSHELF's */
+
+.list-books {
+  background-color: rgb(255, 255, 255);
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+}
+
+.bookshelf-title{
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-top: 10px;
+}
+
+.papai {
+  margin-top: 15px;
+}
+
+.background {
+  background-image: url(../imagens/filter-square.svg);
+  background-size: 18px;
+}
+
+.btn-danger {
+  position: absolute;
+  background-image: url(../imagens/x-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px;
+  border-radius: 50%;
+  bottom: -10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-danger:hover {
+  transform: scale(1.1);
+  transition: 150ms;
+}
+
+.banner {
+  height: 100vh;
+}
+
+.boas_vindas-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -55%);
+  text-align: center;
+  color: white;
+}
+
+#nomeclatura_projeto {
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  font-weight: 600;
+  transform: none;
+  animation: none;
+  font-family: 'Dancing Script', cursive;
+}
+
+.bookshelf-title-procurar {
+  margin: 10px;
+  text-align: center;
+}
+
+.input-group > .form-control, .input-group > .form-select {
+  width: 100%;
+}
+
+.dropdown-menu.show {
+  width: 100%;
+}
